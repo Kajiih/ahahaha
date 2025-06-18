@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 25d1338
+_src_path: .
+author_email: itskajih@gmail.com
+author_fullname: Julian Paquerot
+cli_name: ahahaha
+copyright_holder: Julian Paquerot
+copyright_license: MIT
+copyright_year: '2025'
+coverage_threshold: 80
+default_python_version: '3.13'
+homepage_url: https://github.com/Kajiih/ahahaha
+max_python_version: '3.13'
+min_python_version: '3.12'
+module_name: ahahaha
+package_name: ahahaha
+platforms:
+- macos
+- linux
+- windows
+project_description: Yeay
+project_keywords: python,ahahaha
+project_name: ahahaha
+repo_name: ahahaha
+repo_namespace: Kajiih
+tmp_project_emoji: ''
+
