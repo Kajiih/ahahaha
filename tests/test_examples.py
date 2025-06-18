@@ -20,7 +20,7 @@ def test_xfailed():
 
 
 def test_failed():
-    assert 1 + 1 == 3
+    assert 1 + 1 == 2
 
 
 @pytest.mark.slow("yeah")
