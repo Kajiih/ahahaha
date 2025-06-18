@@ -19,6 +19,10 @@ def test_xfailed():
     assert 1 + 1 == 3
 
 
+def test_failed():
+    assert 1 + 1 == 3
+
+
 @pytest.mark.slow("yeah")
 def test_slow():
     sleep(1)
