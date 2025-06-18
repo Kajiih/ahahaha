@@ -24,7 +24,7 @@ def test_failed():
 
 
 def test_failed2():
-    assert 1 + 1 == 3
+    assert 1 + 2 == 3
 
 
 def test_failed3():
