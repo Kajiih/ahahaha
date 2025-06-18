@@ -28,7 +28,7 @@ def test_failed2():
 
 
 def test_failed3():
-    assert 1 + 1 == 4
+    assert 1 + 3 == 4
 
 
 @pytest.mark.slow("yeah")
