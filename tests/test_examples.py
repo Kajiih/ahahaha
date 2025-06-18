@@ -23,6 +23,14 @@ def test_failed():
     assert 1 + 1 == 2
 
 
+def test_failed2():
+    assert 1 + 1 == 3
+
+
+def test_failed3():
+    assert 1 + 1 == 4
+
+
 @pytest.mark.slow("yeah")
 def test_slow():
     sleep(1)
