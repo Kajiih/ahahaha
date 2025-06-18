@@ -99,7 +99,7 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: 🔍 Lint check
-        uses: astral-sh/ruff-action@813f619ec22bd86f873edaa42d5b01aff58688c9 # 3.4.0
+        uses: astral-sh/ruff-action@52ac3ada9192d41bb1392abe849d80225b53c1ee # 3.4.0
         with:
           args: check --output-format github
 
