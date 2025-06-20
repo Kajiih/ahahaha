@@ -1,5 +1,9 @@
 name: 📦 Bump Version & Create Release
 
+
+permissions:
+    contents: read
+
 on:
   push:
     branches:
