@@ -16,11 +16,14 @@ jobs:
       - name: ⬇️ Checkout
         uses: actions/checkout@v4
 
-      - name: 📝 Generate changelog for this release
+      - name: 📝 Generate changelog for this release tag
         run: |
           pipx install commitizen
-          cz changelog --incremental --file body.md --version ${{ github.ref_name }}
-          cz changelog --incremental --version ${{ github.ref_name }} --dry-run
+          export CURRENT_TAG="${GITHUB_REF#refs/tags/}"
+          export PREVIOUS_TAG=$(git describe --abbrev=0 --tags "$(git rev-list --tags --skip=1 --max-count=1)")
+          echo "Generating changelog from $PREVIOUS_TAG to $CURRENT_TAG"
+          cz changelog --incremental --start-rev "$PREVIOUS_TAG" --file body.md
+      
 
       - name: 📦 Create GitHub Release
         uses: softprops/action-gh-release@v2
