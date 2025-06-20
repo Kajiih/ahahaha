@@ -16,10 +16,11 @@ jobs:
       - name: ⬇️ Checkout
         uses: actions/checkout@v4
 
-      - name: 📝 Generate changelog for latest tag
+      - name: 📝 Generate changelog for this release
         run: |
           pipx install commitizen
-          cz changelog --incremental --file body.md
+          cz changelog --incremental --file body.md --version ${{ github.ref_name }}
+          cz changelog --incremental --version ${{ github.ref_name }} --dry-run
 
       - name: 📦 Create GitHub Release
         uses: softprops/action-gh-release@v2
