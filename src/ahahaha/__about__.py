@@ -1,7 +1,7 @@
 """ahahaha metadata."""
 
 __module_name__ = "ahahaha"  # Not dynamic
-__version__ = "v0.2.0"
+__version__ = "0.3.0"
 
 __authors__ = ["Julian Paquerot"]
 __author_emails__ = ["itskajih@gmail.com"]
