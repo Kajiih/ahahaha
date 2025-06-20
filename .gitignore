@@ -104,3 +104,4 @@ venv.bak/
 # Dev
 .old/
 digest.txt
+CHANGELOG.md
