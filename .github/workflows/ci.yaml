@@ -33,7 +33,7 @@ jobs:
           persist-credentials: false
 
       - name: 🐍 Install uv
-        uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6.1.0
+        uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba # v6.3.1
         with:
 
           python-version: ${{ matrix.python-version }}
@@ -72,7 +72,7 @@ jobs:
           fi
 
       - name: 📊 Upload coverage to Codecov
-        uses: codecov/codecov-action@78f372e97e6e2f82dc51b004c5fb646501ee30ae # 5.4.3
+        uses: codecov/codecov-action@2db07e317924c76f654a414629d71c65876882e2 # 5.4.3
         env:
 
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
@@ -88,7 +88,7 @@ jobs:
           persist-credentials: false
 
       - name: 🐍 Install uv
-        uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6.1.0
+        uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba # v6.3.1
         with:
           python-version: 3.13
           activate-environment: true
@@ -97,7 +97,7 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: 🔍 Lint check
-        uses: astral-sh/ruff-action@52ac3ada9192d41bb1392abe849d80225b53c1ee # 3.4.0
+        uses: astral-sh/ruff-action@8c3aa952c0bf2052dc2efa4104f42b215b6f1245 # 3.4.0
         with:
           args: check --output-format github
 
